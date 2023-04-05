@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0rem;
+            padding:0rem;
+        }
+        body{
+            background-color:#050a1a;
+        }
+        .revolver{
+            height:95%;
+            width:95%;
+            background-image:conic-gradient(blue,green,yellow,white,pink,red,blue);
+            position:absolute;
+            left:0;right:0;top:0;bottom:0;
+            margin:auto;
+            border-radius:100%;
+            animation:revolve 1s linear infinite;
+        }
+        @keyframes revolve {
+            from{transform:rotate(0deg)}
+            to{transform:rotate(360deg)}
+        }
+        h1{
+            font-size:2vw;
+            position:absolute;
+            left:38%;
+            top:40%;
+        }
+        .container{
+            height:40vh;
+            width:90vw;
+            position:absolute;
+            left:0;right:0;top:0;bottom:0;
+            margin:auto;    
+            background-color: #050a1a;
+        }
+        .cover{
+            height:60vw;
+            width:50vw;
+            background-color: rgba(255, 0, 0, 0);
+            position:absolute;
+            left:0;right:0;top:0;bottom:0;
+            margin:auto;
+            border:7em solid #050a1a;
+            border-radius:25%;
+        }
+        .text{
+            height:24vh;
+            width:20vh;
+            background-color:#050a1a;
+            position:absolute;
+            left:0;right:0;top:0;bottom:0;
+            margin:auto;
+            border-radius:1em;
+
+        }
+        h1{
+            font-size:2em;
+            color:rgb(194, 185, 185);
+            position:absolute;
+            margin-left:-1em;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="revolver"></div> 
+    </div>
+    <div class="cover"></div>
+    <div class="text">
+        <h1>rainbow</h1>
+    </div>
+</body>
+</html>
